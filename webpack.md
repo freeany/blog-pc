@@ -1,0 +1,4 @@
+- 我们一般安装局部的webpack，如果安装全局webpack可能会导致版本的不一致
+- webpack需要安装两个包 webpack 和 webpack-cli
+- webpack 可以进行0配置
+- 打包工具 --> 输出的结果是js模块  --》 支持 js的模块化(commjs.amd,cmd,es6...)
