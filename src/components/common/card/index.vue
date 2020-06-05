@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'bg-color',
+  name: 'bg-card',
   // 这里是结合业务，判断是否添加左边框,   和是否fixed
   props: {
 

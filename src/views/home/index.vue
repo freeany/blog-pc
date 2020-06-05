@@ -5,10 +5,10 @@
         <!-- 内容 -->
         <div class="article-content">
           <!-- 首页面包屑 -->
-          <breadcrumb>
+          <my-breadcrumb>
             <a href="#" class="current-location">当前位置：</a>
             <a href="#">首页</a>
-          </breadcrumb>
+          </my-breadcrumb>
           <!-- 文章列表 -->
           <article-list></article-list>
         </div>

@@ -9,7 +9,7 @@
 </template>
 <script>
 export default {
-  name: 'BGTag',
+  name: 'tag',
   props: {
     type: {
       type: String

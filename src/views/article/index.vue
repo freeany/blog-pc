@@ -8,7 +8,7 @@
         <layout>
           <template slot="art-lt">
             <!-- 后期把传递数据过去，在breadcrumb组件内部进行循环 在这里写代码太冗余-->
-            <breadcrumb>
+            <my-breadcrumb>
               <a-breadcrumb class="breadcrumb-content">
                 <a-breadcrumb-item class="breadcrumb-item">
                   <a class="item-link" href>首页</a>
@@ -20,7 +20,7 @@
                   <a class="item-link" href>刚刚上线了个人博客来转转吧</a>
                 </a-breadcrumb-item>
               </a-breadcrumb>
-            </breadcrumb>
+            </my-breadcrumb>
 
             <div class="article-content">
               <header class="article-content__header">
@@ -108,7 +108,7 @@ export default {
           title: 'three'
         }
       ],
-      rightCurrent: 0
+      rightCurrent: -1
     }
   },
   created () {

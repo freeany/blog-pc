@@ -7,7 +7,7 @@
       <!-- <div style="height:10px"></div> -->
       <div class="catelog">
         <!-- 锚点的数据应该根据外界传递过来 -->
-        <a-anchor :get-current-anchor="getCurrentAnchor" :target-offset="targetOffset">
+        <a-anchor :get-current-anchor="getCurrentAnchor" :target-offset="targetOffset" :bounds="0">
           <a-anchor-link
             style="font-size: 18px"
             v-for="item in anchorList"
@@ -56,7 +56,11 @@ export default {
   },
   methods: {
     getCurrentAnchor () {
-      return this.anchorList[this.rightCurrent].href
+      if (this.rightCurrent >= 0) {
+        return this.anchorList[this.rightCurrent].href
+      } else {
+        return 0
+      }
     }
   }
 }

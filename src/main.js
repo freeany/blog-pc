@@ -10,10 +10,17 @@ import './static/common.scss'
 import './static/iconfont.scss'
 // 引入resize
 import './utils/resizeRem'
+import manyRegister from '@/components/common/index'
+// const install = 
+Vue.use(function (Vue, opts = {}) {
+  manyRegister.forEach(item => {
+    Vue.component(item.default.name, item.default)
+  })
+})
 
 // 批量注册组件
-import comp from '@/utils/utils/registerCom'
-Vue.use(comp)
+// import comp from '@/utils/utils/registerCom'
+// Vue.use(comp)
 new Vue({
   el: '#app',
   router,
